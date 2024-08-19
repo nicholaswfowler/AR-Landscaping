@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    background-color: #284C40;
+}
+
+#header{
+    width: 100%;
+    height: 20%;
+    background-color: #284C40;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-area{
+    display: flex;
+    color: white;
+}
+
+.slogan-area{
+    padding-top: 7%;
+    padding-bottom: 0px;
+    padding-right: 15px;
+    color: white;
+    font-style: italic;
+}
+
+#Logo {
+    height: auto;
+    width: auto;
+    max-width: 250px;
+    max-height: 150px;
+}
+
+#content{
+    padding-top: 12%;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    height: 500vh;
+    background-color: white;
+}
+
+button{
+    border: 1px black solid;
+    cursor: pointer;
+    color: black;
+    background: none;
+    transition: all .3s ease-in-out;
+}
+
+.carousel-view{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 44px 0;
+    transition: all 0.25s ease-in;
+  }
+
+.item-list{
+    height: 55vh;
+    max-width: 80vw;
+    width: auto;
+    display: flex;
+    scroll-behavior: smooth;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    padding: 10px;
+    border: 2px black solid;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: black;
+}
+
+.landscaping-image{
+    scroll-snap-align: center;
+    border-radius:20px;
+    padding: 10px;
+}
+
+
+.item-list::-webkit-scrollbar {
+    display: none;
+}
+  
+.item-list {
+    -ms-overflow-style: none; 
+    scrollbar-width: none;  
+}
