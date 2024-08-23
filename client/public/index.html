@@ -26,14 +26,37 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>A&R Landscaping Solutions</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+        emailjs.init({
+            publicKey: "FVJybMaWbKuG2Zhoh",
+        });
+        })();
+    </script>
+     <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // these IDs from the previous steps
+                emailjs.sendForm('ar_landscaping', 'quote_request', this)
+                    .then(() => {
+                        console.log('SUCCESS!');
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
   </head>
-  <body id>
+  <body>
     <div id="header">
         <div class="logo-area">
             <img id="Logo" alt="Logo" src="/BRANDON LOGO.png">
             <h1>A&R Landscaping Solutions</h1>
         </div>
         <div class="slogan-area">
+            <p class="contact-info">(978)602-5792 // arlandscapingsolutions@gmail.com</p>
             <h2>Taking care of the little things</h2>
         </div>
     </div>
