@@ -5,11 +5,12 @@ body{
 
 #header{
     width: 100%;
-    height: 20%;
+    height: fit-content;
     background-color: #284C40;
     position: fixed;
     display: flex;
     justify-content: space-between;
+    margin-top: 0px;
 }
 
 .logo-area{
@@ -19,7 +20,6 @@ body{
 
 .slogan-area{
     padding-top: 0;
-    padding-bottom: 7%;
     padding-right: 20px;
     color: white;
     font-style: italic;
@@ -30,10 +30,16 @@ body{
     width: auto;
     max-width: 250px;
     max-height: 150px;
+    padding-top: 20px;
+}
+
+a{
+    color: white;
 }
 
 #root{
-    padding-top: 12%;
+    padding-top: 14%;
+    font-family: "Trirong", serif;
 }
 
 #content{
@@ -41,7 +47,7 @@ body{
     margin-left: 15px;
     margin-right: 15px;
     margin-bottom: 15px;
-    height: 258.5vh;
+    height: fit-content;
     background-color: white;
     border-radius:20px;
 }
@@ -98,6 +104,7 @@ button{
     padding-left: 50px;
     padding-right: 50px;
     border: 2px #284C40 solid;
+    box-shadow: 10px 5px 5px #284C40;
     margin: 10px;
     border-radius:20px;
 }
@@ -114,6 +121,7 @@ button{
     padding-left: 50px;
     padding-right: 50px;
     border: 2px #284C40 solid;
+    box-shadow: 10px 5px 5px #284C40;
     margin: 10px;
     border-radius:20px;
 }
@@ -129,6 +137,7 @@ button{
     text-align: start;
     text-decoration: underline;
     padding-bottom: 20px;
+    height: 150px;
 }
 
 .service-desc{
@@ -138,14 +147,32 @@ button{
     text-decoration: underline white;
 }
 
+
 #request-quote{
-    text-align: center;
     padding: 20px;
     padding-left: 50px;
     padding-right: 50px;
     border: 2px #284C40 solid;
+    box-shadow: 10px 5px 5px #284C40;
     margin: 10px;
     border-radius:20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+#form-content{
+    width: fit-content;
+    text-align: start;
+}
+
+.field{
+    display: flex;
+    flex-direction: column;
 }
 
 label{

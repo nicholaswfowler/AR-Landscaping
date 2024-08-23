@@ -10,7 +10,9 @@ function App() {
         const image = document.createElement('img');
         image.src = `/images/${images[i]}`;
         image.className = 'landscaping-image';
-        itemList.appendChild(image);
+        if(itemList.childElementCount !== images.length){
+          itemList.appendChild(image);
+        }
       }
       const next = document.querySelector('#next-btn')
       const list = document.querySelector('#item-list')
@@ -32,12 +34,17 @@ function App() {
         <div className="container">
         <h1 className='about-us'>About Us
           <p id='about-desc'>
-            2 young men that graduated from Oakmont Regional High School together decided to capitalize on a dream.
-            The dream was a simple and honest one. A movement to make people smile when they look at their property.
-              Our unique personalities, dedication to improvement, and our hunger to leap on an opportunity led us to
-              establish this company, A&R Lawn Care. Established only in 2023, we are new to some things, but we are
-                veterans at hard work, and professional lawn care  technicians. While we take our baby steps on the path
-                of ambition, we would like to say thank you to everyone who has and will support us.
+            We are two young men who graduated from Oakmont Regional High School and together we decided to capitalize on a dream.
+            The dream is a simple and honest one, a movement to make people smile when they look at their property.
+            Our unique personalities, dedication to improvement, and our hunger to leap on an opportunity led us to
+            establish this company, A&R Landscaping Solutions. Established only in 2023, we are new to some things, but we are
+            veterans at hard work, and professional lawn care technicians. While we take our baby steps on the path
+            of ambition, we would like to say thank you to everyone who has and will support us.
+          </p>
+          <p id='about-desc'>
+            Transform your outdoor areas with ease—let A&R Landscaping Solutions take care of the cleanup so you can enjoy a pristine 
+            and beautiful environment. Contact us today to schedule your cleanup service and experience the difference of a 
+            well-maintained property!
           </p>
         </h1>
 
@@ -62,26 +69,39 @@ function App() {
           <h2 className='service'>Mowing:
             <p className='service-desc'> 
               In Massachusetts, the best plan for the health of your lawn is to start mowing in the spring once the grass
-              grows to 3 or 4 inches. Once the season hits we will mow your lawn to a healthy height of 3 inches and
-              maintain it all year.
+              grows to 3 or 4 inches. Once the season hits we will transform your lawn into a lush, immaculate landscape with our 
+              top-notch mowing services. At A&R, we understand that a well-manicured lawn is the cornerstone of a 
+              beautiful property. We are dedicated to delivering precision mowing that enhances the health and 
+              appearance of your lawn, ensuring your outdoor space looks its best year-round.
             </p>
           </h2>
+          <hr></hr>
           <h2 className='service'>Weed Control:
             <p className='service-desc'>
-              We are careful and precise with our weedeating, so you will never walk outside to a beaten up  fence or siding.
+              Achieve a pristine, weed-free landscape with our professional weed control services at A&R. 
+              Weeds can be more than just an eyesore; they compete with your plants for essential nutrients 
+              and water, potentially harming the health and appearance of your garden or lawn. We 
+              specialize in targeted weed management strategies that restore and maintain the beauty of your 
+              outdoor spaces.            
             </p>
           </h2>
+          <hr></hr>
           <h2 className='service'>Cleanups:
             <p className='service-desc'>
+              Transform your outdoor spaces into immaculate showcases with our comprehensive cleanup services at A&R. 
               Our fall cleanup offers leaf removal, edging, and aeration. For spring cleanups we offer dethatching,
               edging and branch trimming. All of these are crucial for your lawn's overall health and beauty.
             </p>
           </h2>
+          <hr></hr>
           <h2 className='service'>Trimming and Shaping:
             <p className='service-desc'>
-              We can keep your horticulture at a maintainable height!
+            Enhance the beauty and precision of your outdoor spaces with our professional trimming and edging services at 
+            A&R. Our dedicated team is committed to bringing meticulous attention to every detail, ensuring your garden beds, 
+            lawn edges, and decorative features are impeccably maintained and aesthetically pleasing.
             </p>
           </h2>
+          <hr></hr>
           <h2 className='service'>Coming Soon:
             <ul className='service-desc'>
               <li>Powerwashing</li>
@@ -92,35 +112,40 @@ function App() {
             </ul>
           </h2>
         </h1>
-        <h1 id='request-quote'>Request A Free Quote
-        <form id="contact-form">
-          <div class="field">
-            <label for="from_name">Name: </label>
-            <input type="text" name="from_name" id="from_name"></input>
+        <div id='request-quote'>
+          <div id='form-content'>
+            <h1>Request A Free Quote</h1>
+            <div>
+              <form id="contact-form">
+                <div class="field">
+                  <label for="from_name">Name: </label>
+                  <input type="text" name="from_name" id="from_name"></input>
+                </div>
+                <div class="field">
+                  <label for="phone">Phone Number: </label>
+                  <input type="text" name="phone" id="phone"></input>
+                </div>
+                <div class="field">
+                  <label for="reply_to">Email: </label>
+                  <input type="text" name="reply_to" id="reply_to"></input>
+                </div>
+                <div class="field">
+                  <label for="address">Address: </label>
+                  <input type="text" name="address" id="address"></input>
+                </div>
+                <div class="field">
+                  <label for="service_type">Service: </label>
+                  <input type="text" name="service_type" id="service_type"></input>
+                </div>
+                <div class="field">
+                  <label for="message">Message: </label>
+                  <textarea rows={6} type="text" name="message" id="message"></textarea  >
+                </div>
+                <input type="submit" id="button" value="Request Quote" ></input>
+              </form>
+            </div>
           </div>
-          <div class="field">
-            <label for="phone">Phone Number: </label>
-            <input type="text" name="phone" id="phone"></input>
-          </div>
-          <div class="field">
-            <label for="reply_to">Email: </label>
-            <input type="text" name="reply_to" id="reply_to"></input>
-          </div>
-          <div class="field">
-            <label for="address">Address: </label>
-            <input type="text" name="address" id="address"></input>
-          </div>
-          <div class="field">
-            <label for="service_type">Service: </label>
-            <input type="text" name="service_type" id="service_type"></input>
-          </div>
-          <div class="field">
-            <label for="message">Message: </label>
-            <textarea type="text" name="message" id="message"></textarea  >
-          </div>
-          <input type="submit" id="button" value="Request Quote" ></input>
-        </form>
-        </h1>
+        </div>
       </div>
   ); 
 }
