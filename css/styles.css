@@ -1,0 +1,154 @@
+body{
+    margin: 0;
+    background-color: #284C40;
+}
+
+#header{
+    width: 100%;
+    height: 20%;
+    background-color: #284C40;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-area{
+    display: flex;
+    color: white;
+}
+
+.slogan-area{
+    padding-top: 0;
+    padding-bottom: 7%;
+    padding-right: 20px;
+    color: white;
+    font-style: italic;
+}
+
+#Logo {
+    height: auto;
+    width: auto;
+    max-width: 250px;
+    max-height: 150px;
+}
+
+#root{
+    padding-top: 12%;
+}
+
+#content{
+    padding: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    height: 258.5vh;
+    background-color: white;
+    border-radius:20px;
+}
+
+button{
+    border: 0px;
+    cursor: pointer;
+    color: black;
+    background: none;
+    transition: all .3s ease-in-out;
+}
+
+.carousel-view{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.25s ease-in;
+  }
+
+.item-list{
+    height: 55vh;
+    max-width: 100vw;
+    width: auto;
+    display: flex;
+    scroll-behavior: smooth;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.landscaping-image{
+    scroll-snap-align: center;
+    border-radius:20px;
+    border: 2px black solid;
+    margin: 10px;
+}
+
+
+.item-list::-webkit-scrollbar {
+    display: none;
+}
+  
+.item-list {
+    -ms-overflow-style: none; 
+    scrollbar-width: none;  
+}
+
+.about-us{
+    text-align: center;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 2px #284C40 solid;
+    margin: 10px;
+    border-radius:20px;
+}
+
+#about-desc{
+    text-align: start;
+    font-size: large;
+    font-weight: 400;
+}
+
+.services{
+    text-align: center;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 2px #284C40 solid;
+    margin: 10px;
+    border-radius:20px;
+}
+
+#quote{
+    font-size: medium;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.service{
+    font-size: x-large;
+    text-align: start;
+    text-decoration: underline;
+    padding-bottom: 20px;
+}
+
+.service-desc{
+    margin-top: 0px;
+    font-size: large;
+    font-weight: 400;
+    text-decoration: underline white;
+}
+
+#request-quote{
+    text-align: center;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 2px #284C40 solid;
+    margin: 10px;
+    border-radius:20px;
+}
+
+label{
+    font-size: medium;
+    font-weight: 600;
+}

@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/AR-Landscaping/static/css/main.f855e6bc.css",
+    "main.js": "/AR-Landscaping/static/js/main.15bb5afa.js",
+    "index.html": "/AR-Landscaping/index.html",
+    "main.f855e6bc.css.map": "/AR-Landscaping/static/css/main.f855e6bc.css.map",
+    "main.15bb5afa.js.map": "/AR-Landscaping/static/js/main.15bb5afa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.15bb5afa.js"
+  ]
+}
