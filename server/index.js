@@ -18,6 +18,8 @@ app.get('/', (req, res) => {
       });
 })
 
-app.listen(8080, () => {
-    console.log('Server Listening On Port 8080');
-})
+// const apiUrl = process.env.REACT_APP_GET_IMAGES;
+
+// app.listen(apiUrl, () => {
+//     console.log('Server Listening On Port 8080');
+// })

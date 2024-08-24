@@ -3,7 +3,7 @@ import axios from 'axios';
 
 function App() {
 
-    axios.get("http://localhost:8080").then((data) => {
+    axios.get("https://arlandscaping-server.onrender.com/").then((data) => {
       const images = data.data[0];
       const itemList = document.querySelector('#item-list');
       for(let i = 0; i < images.length; i++){
@@ -27,6 +27,8 @@ function App() {
       list.scrollLeft += (itemWidth + padding)}) 
     });
 
+    const apiUrl = process.env.REACT_APP_GET_IMAGES;
+    console.log(apiUrl);
 
 
   return (

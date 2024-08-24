@@ -1,11 +1,10 @@
 body{
     margin: 0;
     background-color: #284C40;
-    width: 100vw;
 }
 
 #header{
-    width: 100vw;
+    width: 100%;
     height: fit-content;
     background-color: #284C40;
     display: flex;
