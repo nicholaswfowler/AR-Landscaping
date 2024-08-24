@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const fs = require('fs');
+const port = process.env.PORT || 4000;
 
 
 app.use(cors());
@@ -18,8 +19,7 @@ app.get('/', (req, res) => {
       });
 })
 
-// const apiUrl = process.env.REACT_APP_GET_IMAGES;
 
-// app.listen(apiUrl, () => {
-//     console.log('Server Listening On Port 8080');
-// })
+app.listen(port, () => {
+    console.log('Server Listening');
+})
