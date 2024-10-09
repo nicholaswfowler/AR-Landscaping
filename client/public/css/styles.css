@@ -98,7 +98,7 @@ button{
     display: flex;
     scroll-behavior: smooth;
     overflow: auto;
-    scroll-snap-type: x mandatory;
+/*     scroll-snap-type: x mandatory; */
     padding: 1vw;
     margin-left: 1vw;
     margin-right: 1vw;
